@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        whatsapp web
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            /* position: sticky; */
+            padding: 0px;
+        }
+
+
+
+        .logo img {
+            position: absolute;
+            width: auto;
+            /* border: 2px solid red; */
+            margin-left: -181px;
+            height: 35px;
+            margin-top: -5px;
+        }
+
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 7;
+
+
+        }
+
+        .navbar ul {
+            margin-left: 250px;
+            margin-top: 28px;
+        }
+
+        .navbar ul li {
+            float: left;
+            /* border: 2px solid red; */
+            list-style: none;
+
+        }
+
+        .navbar ul li a {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+        }
+
+        .navbar ul li a {
+            position: relative;
+
+        }
+
+        .navbar ul li a::after {
+            content: "";
+            position: absolute;
+            background-color: #3bd93b;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        }
+
+
+
+        .navbar ul li a:hover::after {
+            width: 100%;
+
+        }
+
+
+        .download {
+            margin-left: 49px;
+            margin-top: -7px;
+            height: 50px;
+            width: 130px;
+            /*border: 2px solid red;*/
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #3bd93b;
+            border-radius: 36px;
+            border-color: transparent;
+        }
+
+        .download:hover {
+            background-color: black;
+            cursor: pointer;
+            color: white;
+        }
+
+        .container img {
+            height: 600px;
+            margin-left: 63px;
+            width: 1227px;
+            margin-top: 18px;
+            border-radius: 23px;
+        }
+
+        .container .img1 {
+            height: 40px;
+            width: auto;
+            /* border: 2px solid red; */
+            display: block;
+            /* position: absolute; */
+            margin-left: 752px;
+            margin-top: -526px;
+        }
+
+        .container .img2 {
+            height: 60px;
+            width: 393px;
+            /* border: 2px solid red; */
+            /* display: block; */
+            position: absolute;
+            margin-left: 763px;
+            margin-top: 66px;
+        }
+
+        .container .img3 {
+            height: 90px;
+            width: auto;
+            /* border: 2px solid red; */
+            /* display: block; */
+            position: absolute;
+            margin-left: 790px;
+            margin-top: -25px;
+        }
+
+        .container .img4 {
+            height: 290px;
+            width: 466px;
+            /* border: 2px solid red; */
+            /* display: block; */
+            position: absolute;
+            margin-left: 739px;
+            margin-top: 133px;
+        }
+
+        .container .img5 {
+            height: 61px;
+            width: auto;
+            /* border: 2px solid red; */
+            /* display: block; */
+            position: absolute;
+            margin-left: 751px;
+            margin-top: 407px;
+        }
+
+        .head1 {
+            /* border: 2px solid red; */
+            position: absolute;
+            margin-top: 62px;
+            margin-left: 188px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 70px;
+            color: white;
+        }
+
+        .para1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            /* border: 2px solid red; */
+            position: absolute;
+            margin-top: 230px;
+            margin-left: 188px;
+            font-size: 21px;
+        }
+
+        .download1 {
+            margin-left: 245px;
+            margin-top: 342px;
+            height: 50px;
+            width: 130px;
+            font-family: 'Times New Roman', Times, serif;
+            /* border: 2px solid red; */
+            color: black;
+            background-color: #3bd93b;
+            border-radius: 36px;
+            border-color: transparent;
+        }
+
+        .download1:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .container1 img {
+            /* border: 2px solid red; */
+            height: 217px;
+            margin-top: 158px;
+            margin-left: 66px;
+
+        }
+
+        .container1 p {
+            /* border: 2px solid red; */
+            padding: 23px;
+            text-align: center;
+            font-size: 40px;
+            margin-top: 115px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container2 img {
+            margin-left: 925px;
+            margin-top: 23px;
+        }
+
+        .container2 p {
+            /* border: 2px solid red; */
+            margin-top: -504px;
+            display: block;
+            position: absolute;
+            font-size: 55px;
+            margin-left: 180px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container2 .p1 {
+            font-size: 23px;
+            margin-top: -202px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container3 {
+            background-color: #232738;
+            /* border: 2px solid red; */
+            height: 629px;
+            width: auto;
+        }
+
+        .container3 img {
+            margin-left: 116px;
+        }
+
+        .container3 h1 {
+            /* border: 2px solid red; */
+            display: block;
+            /* position: absolute; */
+            margin-top: -479px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 778px;
+            font-size: 74px;
+        }
+
+        .container3 h2 {
+            margin-left: 778px;
+            color: #3bd93b;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 67px;
+        }
+
+        .container3 p {
+            margin-top: 31px;
+            margin-left: 778px;
+            font-size: 22px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* border: 2px solid red; */
+        }
+
+        .container3 a {
+            margin-left: 778px;
+            font-size: 30px;
+            color: #3bd93b;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container4 img {
+            margin-left: 778px;
+        }
+
+        .container4 .img1 {
+            margin-left: 745px;
+            margin-top: -571px;
+            display: block;
+        }
+
+        .container4 a {
+            margin-left: 133px;
+            font-size: 30px;
+            color: #3bd93b;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        .container4 h1 {
+            /* border: 2px solid red; */
+            margin-top: -337px;
+            margin-left: 133px;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container4 p {
+            margin-left: 133px;
+            margin-top: 23px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .container5 a {
+            text-decoration: none;
+            color: #3bd93b;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container5 {
+            /* border: 2px solid red; */
+            margin-left: 500px;
+            margin-top: 414px;
+            text-align: center;
+            font-size: 29px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .container5 .img2 {
+            margin-left: -367px;
+            display: block;
+            /* border: 2px solid red; */
+            margin-top: -410px;
+        }
+
+        .container5 .img {
+            /* border: 2px solid red; */
+            height: 280px;
+            margin-left: -367px;
+            display: block;
+            margin-top: -463px;
+        }
+
+        .container6 img {
+            margin-top: 173px;
+            margin-left: 68px;
+        }
+
+        .container6 h1 {
+            /* border: 2px solid red; */
+            margin-left: -1141px;
+            margin-top: -454px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container6 p {
+            margin-left: -1141px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container6 a {
+            color: #3bd93b;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container7 {
+            background-color: #232738;
+            margin-top: 135px;
+
+            height: 600px;
+            margin-left: 63px;
+            width: 1227px;
+            /* margin-top: 18px; */
+            border-radius: 23px;
+
+        }
+
+        .container7 img {
+            height: 44px;
+            margin-top: 108px;
+            margin-left: 84px;
+        }
+
+        .container7 .download {
+
+            margin-left: -183px;
+            margin-top: 301px;
+            height: 50px;
+            width: 170px;
+            /* border: 2px solid red; */
+            color: black;
+            background-color: #3bd93b;
+            border-radius: 36px;
+            border-color: transparent;
+            position: absolute;
+
+        }
+
+        .container7 .download:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .one {
+            /* border: 2px solid red; */
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 394px;
+            font-size: 24px;
+            margin-top: 12px;
+        }
+
+        .container7 h1 {
+            color: white;
+            margin-left: 365px;
+            margin-top: -66px;
+            /* border: 2px solid red; */
+            position: absolute;
+        }
+
+        .container7 .h2 {
+            /* border: 2px solid red; */
+            position: absolute;
+            margin-top: -274px;
+            margin-left: 589px;
+        }
+
+        .two {
+            color: white;
+            margin-left: 609px;
+            font-size: 24px;
+            margin-top: -194px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container7 .h3 {
+            position: absolute;
+            margin-top: -274px;
+            margin-left: 799px;
+        }
+
+        .three {
+
+            color: white;
+            margin-left: 834px;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: -192px;
+        }
+
+        .container7 .h4 {
+            position: absolute;
+            margin-top: -274px;
+            margin-left: 1030px;
+        }
+
+        .four {
+
+            color: white;
+            margin-left: 1050px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            margin-top: -188px;
+        }
+
+        .container7 hr {
+            margin-top: 45px;
+            /* width: 1000px; */
+            /* margin-left: 90px; */
+        }
+
+        .last {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            margin-left: 69px;
+            margin-top: 67px;
+            font-size: 20px;
+        }
+
+        .last1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            margin-left: 360px;
+            margin-top: -45px;
+            font-size: 21px;
+
+        }
+
+        .icons {
+            /* border: 2px solid red; */
+            margin-left: 656px;
+            margin-top: -41px;
+            color: white;
+            position: absolute;
+            font-size: 40px;
+
+        }
+
+        #English {
+            margin-left: 986px;
+            margin-top: -49px;
+            position: absolute;
+            height: 63px;
+            width: 201px;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 34px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <ul>
+            <div class="logo">
+                <img src=".//img/logo whatsapp.png">
+            </div>
+            <li><a href=".//features.html">Fetures</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">For Business</a></li>
+            <li><a href="#">Whtasapp Web</a></li>
+
+        </ul>
+        <button class="download"> Download</button>
+
+    </div>
+    <div class="container">
+
+        <img src="./img/rana.png" alt="">
+        <img class="img1" src=".//img/rana1.png" alt="">
+        <img class="img2" src=".//img/rana2.png" alt="">
+        <img class="img3" src=".//img/rana3.png" alt="">
+        <img class="img4" src=".//img/rana4.png" alt="">
+        <img class="img5" src=".//img/rana5.png" alt="">
+    </div>
+    <h1 class="head1">Message <br> Privately</h1>
+    <p class="para1">Simple,reliable,private messaging and <br> calling for free*, avaliable all over the <br> world.
+    </p>
+    <button class="download1">Download</button>
+    <div class="container1">
+        <img src=".//img/rana6.png" alt="">
+        <p>With Private Messagaging and Calling,You Can <br> be youself.speak freely and feel close to the <br> most
+            important people in your life no matter <br> where they are </p>
+    </div>
+    <div class="container2">
+        <img src=".//img/rana7.png" alt="">
+        <p>Never Miss a <br> Moment With <br> Voice And Video <br> Call</p>
+        <p class="p1">From a group call to classmates to a quick call with mom. <br> feel like you're in the same room
+            with voice and video <br> calls.</p>
+    </div>
+    <div class="container3">
+
+        <img src=".//img/rana8.png" alt="">
+        <h1>Speak <br>
+            <h2>Freely </h2>
+        </h1>
+        <p>With end-to-and encryption ypur personal message and <br> calls are secured. only you and the person you're
+            talking <br> to can read or listen to them,and nobody in between,not <br> even whatsapp.</p><br>
+        <a href="">Learn more...</a>
+    </div>
+    <div class="container4">
+        <img src=".//img/rana9.png" alt="">
+        <img class="img1" src=".//img/rana10.png" alt="">
+        <h1>Keep in touch
+            <br> with your groups
+        </h1>
+        <p>Weather its planning an outing with friends or simply <br> staying on top of your family chats,group
+            conversation <br> should feel effortless.</p><br>
+        <a href="">Learn more...</a>
+    </div>
+    <div class="container5">
+
+        <h1>Say what <br> you feel</h1><br>
+        <p>Express your self without words. use strickers and GIFs or <br> share everyday Moments on status. Record a
+            voice <br> message for a quick hello or a longer story. </p>
+        <img class="img2" src=".//img/rana12.png" alt="">
+        <img class="img" src=".//img/rana11.png" alt="">
+        <a href="">Learn more...</a>
+        <div class="container6">
+
+            <img src=".//img/rana13.png" alt="">
+            <h1>Transform<br> your bussiness </h1><br>
+            <p>Whatsapp business helps you reach your customers <br> globally to deliver compelling experience at scale.
+                <br> showcase your products ans services,increase sales, <br>and build relationship all with whatsapp.
+                <br>
+                <br>
+                <a href="">Learn more...</a>
+            </p>
+
+
+
+        </div>
+
+    </div>
+    <div class="container7">
+
+
+        <img src=".//img/logo whatsapp.png" alt="">
+        <button class="download">Download</button>
+
+        <h1>What we do</h1>
+        <div class="one">
+            Features <br> <br>
+            Blog <br> <br>
+            Security <br> <br>
+            For Bussiness
+        </div>
+        <h1 class="h2">Who we are</h1>
+
+        <div class="two">
+            About us <br> <br>
+            Careers <br> <br>
+            Brand Center <br> <br>
+            Privacy
+        </div>
+        <h1 class="h3">Use Whatsapp</h1>
+        <div class="three">
+            Android <br> <br>
+            Iphone <br> <br>
+            Mac/Pc <br> <br>
+            Whatsapp Web
+        </div>
+        <h1 class="h4">Need help?</h1>
+        <div class="four">
+            Contact Us <br> <br>
+            Help Center <br> <br>
+            Coronavirus <br> <br>
+            Security Advisories
+        </div>
+        <hr>
+        <div class="last">
+            <p>2023&copy;whatsapp <br> LLC</p>
+        </div>
+        <div class="last1">
+            Term&Privacy <br> policy
+
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <td>
+
+            <select id="English">
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Punjabi</option>
+
+            </select>
+        </td>
+</body>
+
+</html>
